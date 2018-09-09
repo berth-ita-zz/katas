@@ -7,7 +7,7 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 public class FizzBuzzTest {
 
     @Test
-    public void numberMultipleOfThree() {
+    public void numberMultipleOfThreeReturnFizzTest() {
         int number = 3;
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.calculateFizzBuzz(number);
@@ -15,7 +15,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void numberMultipleOfFive() {
+    public void numberMultipleOfFiveReturnBuzzTest() {
         int number = 5;
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.calculateFizzBuzz(number);
@@ -23,7 +23,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void numberMultipleOfThreeAndFive() {
+    public void numberMultipleOfThreeAndFiveReturnFizzBuzzOkTest() {
         int number = 15;
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.calculateFizzBuzz(number);
@@ -31,7 +31,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void numberNotMultipleOfThreeOrFive() {
+    public void numberNotMultipleOfThreeOrFiveReturnNumberTest() {
         int number = 4;
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.calculateFizzBuzz(number);
