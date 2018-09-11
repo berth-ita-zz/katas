@@ -21,7 +21,7 @@ public class DiamondTest {
     }
 
     @Test
-    public void printTriangleLineOkTest() {
+    public void printDiamondLineOkTest() {
         Diamond diamond = new Diamond();
         int asteriskNumber = 1;
         int blankNumber = 2;
