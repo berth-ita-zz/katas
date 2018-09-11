@@ -18,7 +18,7 @@ public class Diamond {
     }
 
     String getAsterisksDiamond(int number) {
-        StringBuilder triangle = new StringBuilder();
+        StringBuilder diamond = new StringBuilder();
         int base = calculateBase(number);
         for(int i = 1; i <= base; i++) {
             int asteriskNumber = 2 * i - 1;
@@ -26,12 +26,12 @@ public class Diamond {
                 asteriskNumber = 2 * (2 * number - i) - 1;
             }
             int blankNumber = (base - asteriskNumber) / 2;
-            triangle.append(createDiamondLine(asteriskNumber, blankNumber));
+            diamond.append(createDiamondLine(asteriskNumber, blankNumber));
             if(i != base) {
-                triangle.append("\n");
+                diamond.append("\n");
             }
         }
-        return triangle.toString();
+        return diamond.toString();
     }
 
     String createDiamondLine(int asteriskNumber, int blankNumber){
