@@ -33,12 +33,12 @@ public class IsoscelesTriangle {
 
     String createTriangleLine(int asteriskNumber, int blankNumber){
         StringBuilder triangleLine = new StringBuilder();
-        String blankSpaces = characterXn(blankNumber,  " ");
-        String asterisk = characterXn(asteriskNumber, "*");
+        String blankSpaces = getCharacterXn(blankNumber,  " ");
+        String asterisk = getCharacterXn(asteriskNumber, "*");
         return triangleLine.append(blankSpaces).append(asterisk).append(blankSpaces).toString();
     }
 
-    private String characterXn(int number, String character) {
+    private String getCharacterXn(int number, String character) {
         return IntStream.range(0, number).mapToObj(i -> character).collect(Collectors.joining());
     }
 

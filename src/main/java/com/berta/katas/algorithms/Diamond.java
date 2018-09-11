@@ -36,12 +36,12 @@ public class Diamond {
 
     String createDiamondLine(int asteriskNumber, int blankNumber){
         StringBuilder diamondLine = new StringBuilder();
-        String blankSpaces = characterXn(blankNumber,  " ");
-        String asterisk = characterXn(asteriskNumber, "*");
+        String blankSpaces = getCharacterXn(blankNumber,  " ");
+        String asterisk = getCharacterXn(asteriskNumber, "*");
         return diamondLine.append(blankSpaces).append(asterisk).append(blankSpaces).toString();
     }
 
-    private String characterXn(int number, String character) {
+    private String getCharacterXn(int number, String character) {
         return IntStream.range(0, number).mapToObj(i -> character).collect(Collectors.joining());
     }
 
