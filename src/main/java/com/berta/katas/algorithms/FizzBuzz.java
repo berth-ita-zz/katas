@@ -11,7 +11,7 @@ public class FizzBuzz {
         }
     }
 
-    public String calculateFizzBuzz(int number) {
+    String calculateFizzBuzz(int number) {
         if(number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
         }

@@ -15,7 +15,7 @@ public class VerticalLine {
         System.out.println(result);
     }
 
-    public String getAsterisksLine(int number) {
+    String getAsterisksLine(int number) {
         StringBuilder line = new StringBuilder();
         for(int i = 0; i < number; i++) {
             if(i != 0) {
@@ -28,7 +28,7 @@ public class VerticalLine {
         return line.toString();
     }
 
-    public String getAsterisk() {
+    String getAsterisk() {
         return "*";
     }
 

@@ -8,7 +8,7 @@ public class EasiestExercise {
         System.out.println(result);
     }
 
-    public String getAsterisk() {
+    String getAsterisk() {
         return "*";
     }
 }

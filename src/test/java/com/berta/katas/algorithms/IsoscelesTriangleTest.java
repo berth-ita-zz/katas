@@ -21,6 +21,15 @@ public class IsoscelesTriangleTest {
     }
 
     @Test
+    public void printTriangleLineOkTest() {
+        IsoscelesTriangle isoscelesTriangle = new IsoscelesTriangle();
+        int asteriskNumber = 1;
+        int blankNumber = 2;
+        String line = isoscelesTriangle.createTriangleLine(asteriskNumber, blankNumber);
+        assertThat(line).isEqualTo("  *  ");
+    }
+
+    @Test
     public void printTriangleOkTest() {
         IsoscelesTriangle isoscelesTriangle = new IsoscelesTriangle();
         int number = 3;

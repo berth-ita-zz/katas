@@ -15,7 +15,7 @@ public class HorizontalLine {
         System.out.println(result);
     }
 
-    public String getAsterisksLine(int number) {
+    String getAsterisksLine(int number) {
         StringBuilder line = new StringBuilder();
         for(int i = 0; i < number; i++) {
             line.append(getAsterisk());
@@ -24,7 +24,7 @@ public class HorizontalLine {
         return line.toString();
     }
 
-    public String getAsterisk() {
+    String getAsterisk() {
         return "*";
     }
 

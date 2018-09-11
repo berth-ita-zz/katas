@@ -15,7 +15,7 @@ public class RightTriangle {
         System.out.println(result);
     }
 
-    public String getAsterisksTriangle(int number) {
+    String getAsterisksTriangle(int number) {
         StringBuilder triangle = new StringBuilder();
         for(int i = 0; i < number; i++) {
             if(i != 0) {
@@ -35,7 +35,7 @@ public class RightTriangle {
         return line.toString();
     }
 
-    public String getAsterisk() {
+    String getAsterisk() {
         return "*";
     }
 }
