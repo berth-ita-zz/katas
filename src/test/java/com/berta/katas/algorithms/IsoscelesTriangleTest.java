@@ -13,9 +13,17 @@ public class IsoscelesTriangleTest {
     }
 
     @Test
+    public void calculateBaseOkTest() {
+        IsoscelesTriangle isoscelesTriangle = new IsoscelesTriangle();
+        int number = 3;
+        int base = isoscelesTriangle.calculateBase(number);
+        assertThat(base).isEqualTo(5);
+    }
+
+    @Test
     public void printTriangleOkTest() {
         IsoscelesTriangle isoscelesTriangle = new IsoscelesTriangle();
-        int number = 5;
+        int number = 3;
         String line = isoscelesTriangle.getAsterisksTriangle(number);
         assertThat(line).isEqualTo("  *  \n *** \n*****");
     }
